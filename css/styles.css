@@ -1,0 +1,146 @@
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: inherit;
+}
+
+:root {
+  font-family: "Poppins", sans-sserif;
+  font-size: 15px;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature {
+  padding: 90px 32px 54px;
+  color: #a3a5ae;
+}
+.feature .container {
+  padding-left: 0;
+  padding-right: 0;
+}
+.feature .container .col {
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+}
+.feature .container .col:last-child {
+  margin-bottom: 0;
+}
+.feature .heading {
+  font-size: calc( 28.5px + (8.75) * ((100vw - 375px) / (1065)) );
+  font-weight: 600;
+  line-height: 1.6;
+  color: #4c4e61;
+}
+.feature .heading em {
+  font-size: calc( 29px + (9) * ((100vw - 375px) / (1065)) );
+  font-weight: 200;
+  font-style: normal;
+}
+.feature .text {
+  font-size: 17px;
+  margin-bottom: 76px;
+}
+.feature .card {
+  flex: 1;
+  border-width: 4px 0 0 0;
+  border-radius: 0.3rem;
+  box-shadow: 0 0.75rem 1.5rem -0.75rem rgba(117, 174, 240, 0.4);
+  padding: 22px 28px 26px;
+}
+.feature .card .heading {
+  font-size: 23px;
+  margin-bottom: 10px;
+}
+.feature .card .card-text {
+  font-size: 15px;
+  line-height: 1.4;
+  margin-bottom: 32px;
+}
+.feature .card img {
+  width: 58px;
+  height: 58px;
+  margin-left: auto;
+}
+.feature .card.border-cyan {
+  border-color: #45d3d3;
+}
+.feature .card.border-red {
+  border-color: #ea5353;
+}
+.feature .card.border-orange {
+  border-color: #fcaf4a;
+}
+.feature .card.border-blue {
+  border-color: #549ef2;
+}
+
+@media (max-width: 374px) {
+  .feature .heading {
+    font-size: 24px;
+  }
+  .feature .heading em {
+    font-size: 23.5px;
+  }
+}
+@media (min-width: 576px) {
+  .feature .container {
+    width: 540px;
+  }
+}
+@media (min-width: 1200px) {
+  .feature .container {
+    width: auto;
+    max-width: 1110px;
+  }
+  .feature .container .row {
+    gap: 30px;
+  }
+  .feature .container .row .col {
+    flex: 1 1 0;
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 0;
+  }
+  .feature .container .row .col.flex-column {
+    gap: 30px;
+  }
+  .feature .heading {
+    line-height: 1.36;
+  }
+  .feature .text {
+    max-width: 510px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 64px;
+  }
+  .feature .card {
+    margin-bottom: 0;
+  }
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}/*# sourceMappingURL=styles.css.map */
